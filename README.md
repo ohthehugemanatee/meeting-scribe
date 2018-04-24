@@ -42,3 +42,10 @@ The body of the return will be a JSON object with your summary and keywords in t
 }
 ```
 
+# Test it
+
+You can test it with a curl request. This request will send the contents of the file `transcript.txt`:
+
+```
+$ curl -i -H "Content-Type: application/json" -X POST -d '{"transcript":"`cat transcript.txt`"}' http://localhost:5000/
+```
