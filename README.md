@@ -47,5 +47,16 @@ The body of the return will be a JSON object with your summary and keywords in t
 You can test it with a curl request. This request will send the contents of the file `transcript.txt`:
 
 ```
-$ curl -i -H "Content-Type: application/json" -X POST -d '{"transcript":"`cat transcript.txt`"}' http://localhost:5000/
+$ curl -i -H "Content-Type: application/json" -X POST -d "{\"transcript\": \"$(cat transcript.txt)\" }" http://localhost:5000/
 ```
+This will return a JSON like this:
+
+```
+{
+  "keywords": "rebel, empire", 
+  "summary": "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire\u2019s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet."
+}
+
+```
+
+For debugging purposes, we will also include the original text in the `original` key.
