@@ -1,5 +1,5 @@
 # meeting-scribe
-A web service that performs ML text analysis on meeting transcripts
+A web service that performs ML text analysis on meeting transcripts. This is a work in progress experiment, for the Microsoft CSE hack event.
 
 # Host it locally
 
