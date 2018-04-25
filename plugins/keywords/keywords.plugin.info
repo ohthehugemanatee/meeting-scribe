@@ -1,0 +1,8 @@
+[Core]
+Name = Keywords
+Module = keywords
+
+[Documentation]
+Description = Processes keywords from source text.
+Author = Campbell Vertesi
+Version = 0.1

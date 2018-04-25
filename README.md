@@ -59,4 +59,7 @@ This will return a JSON like this:
 
 ```
 
-For debugging purposes, we will also include the original text in the `original` key.
+Plugins
+---
+
+The input text is passed through any number of "processor" plugins. These are just files in the `plugins` directory. Check out the "keywords" plugin for an example of how this works.
