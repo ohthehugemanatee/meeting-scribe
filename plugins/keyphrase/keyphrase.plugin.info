@@ -1,0 +1,8 @@
+[Core]
+Name = Keyphrase
+Module = keyphrase
+
+[Documentation]
+Description = Processes key phrases from source text using the RAKE approach.
+Author = Elise Donkor
+Version = 0.1

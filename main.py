@@ -19,10 +19,11 @@ def process_text():
     simplePluginManager.collectPlugins()
     response = { }
     for pluginInfo in simplePluginManager.getAllPlugins():
+        print "loaded: " + pluginInfo.name
         returnValue = pluginInfo.plugin_object.process(transcript)
         response.update(returnValue)
 
     return jsonify(response), 200
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug = True)
