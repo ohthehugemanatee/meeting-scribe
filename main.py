@@ -1,7 +1,9 @@
 # coding=utf-8
 import logging
 from flask import Flask, request, jsonify
-from gensim.summarization import summarize, keywords
+import warnings
+import processor as process
+
 
 app = Flask(__name__)
 
@@ -10,8 +12,8 @@ def process_text():
     if not request.json or not 'transcript' in request.json:
         abort(400)
     # Here we can do some processing on the text.
-    summary = summarize(request.json['transcript'])
-    keyword_list = keywords(request.json['transcript'])
+    summary = process.summarize(request.json['transcript'])
+    keyword_list = process.keyword(request.json['transcript'])
 
     # For now, return a static response.
 
