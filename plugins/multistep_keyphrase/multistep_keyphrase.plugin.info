@@ -1,0 +1,8 @@
+[Core]
+Name = Multistep Keyphrase
+Module = multistep_keyphrase
+
+[Documentation]
+Description = Breaks transcript down by topic, and feeds that to an OSS keyphraser
+Author = Campbell Vertesi
+Version = 0.1
