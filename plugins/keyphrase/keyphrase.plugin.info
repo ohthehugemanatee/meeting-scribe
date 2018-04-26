@@ -1,0 +1,8 @@
+[Core]
+Name = Keyphrase
+Module = keyphrase
+
+[Documentation]
+Description = Processes keyphrases from source text through cognitive services key phrases api endpoint
+Author = Roy Moran
+Version = 0.1

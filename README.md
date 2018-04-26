@@ -14,6 +14,11 @@ Installing setuptools............................done.
 Installing pip...................done.
 $ flask/bin/pip install flask
 ```
+Install all dependencies. 
+
+```
+$ pip install -r requirements.txt
+```
 
 Now, start the application.
 
